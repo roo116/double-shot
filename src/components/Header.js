@@ -1,6 +1,7 @@
 import React from "react";
 
 const Header = () => {
+
   return (
     <header>
       <h2>Double Shot Rock Band</h2>
@@ -9,7 +10,9 @@ const Header = () => {
         <li>Events</li>
         <li>The Music</li>
         <li>Gallery</li>
-        <li>Get in touch!!!</li>
+        <span>
+          <li>Get in touch!!!</li>
+        </span>
       </ul>
     </header>
   );
