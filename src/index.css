@@ -21,9 +21,6 @@ code {
 }
 
 /* HEADER Component */
-header {
-
-}
 
 /* MAIN Component */
 main {
@@ -58,9 +55,24 @@ header h2 {
   main {
     background-image: url("./img/hero-lg.jpg");
     background-position: center;
+    background-size: cover;
     height: 100vh;
   }
   
-
+  .ds-logo {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  img {
+      display: block;
+      width: 50%;
+      border: white solid 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
   
