@@ -58,21 +58,22 @@ header h2 {
     background-size: cover;
     height: 100vh;
   }
+
+  header {
+    margin-bottom: -80px;
+  }
   
   .ds-logo {
-    width: 50%;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 35%;
+    margin-left: 0px;
   }
   
   img {
       display: block;
+      border: none;
       width: 50%;
-      border: white solid 5px;
       margin-top: 0;
       margin-bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
   }
 }
   
