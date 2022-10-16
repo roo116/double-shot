@@ -10,6 +10,10 @@ const Header = () => {
     { name: "Get in Touch!!!" },
   ];
 
+  const navSelected = (name) => {
+    console.log(`${name} was clicked`)
+  }
+
   return (
     <header className="d-flex flex-wrap justify-content-between bg-black">
       <div className="ds-logo">
@@ -23,7 +27,7 @@ const Header = () => {
       >
         {nav.map((nav) => (
           <li className="mx-2 list-inline-item" key={nav.name}>
-            {nav.name}
+           <span onClick={() => navSelected(nav.name)}>{nav.name}</span> 
           </li>
         ))}
       </ul>
