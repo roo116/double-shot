@@ -22,7 +22,7 @@ code {
 
 /* HEADER Component */
 
-/* MAIN Component */
+/* FRONT Component */
 .front-container {
   background-image: url("./img/hero-mobile.jpg");
   background-position: center top;
@@ -47,12 +47,12 @@ img {
 .ds-font {
   font-family: 'Imbue', serif;;
   color: red;
-  font-size: 0;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 768px) {
 
-  main {
+  .front-container {
     background-image: url("./img/hero-lg.jpg");
     background-position: center;
     background-size: cover;
