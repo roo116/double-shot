@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div>
-        <h2>Double Shot</h2>
+        <h2 className="ds-font">DOUBLE SHOT</h2>
         <p>
           Durham’s own Double Shot Band - known for playing all the favorite
           classic rock covers from the Allman Brothers to ZZ Top. We play hits

@@ -23,13 +23,13 @@ code {
 /* HEADER Component */
 
 /* MAIN Component */
-main {
+.front-container {
   background-image: url("./img/hero-mobile.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 20rem;
-  height: 100vh;
-
+  background-color: black;
+  height: 40vh;
 }
 
 .ds-logo {
@@ -40,14 +40,14 @@ main {
 img {
   display: block;
     width: 50%;
-    border: white solid 5px;
     margin-left: auto;
     margin-right: auto;
 }
 
-header h2 {
+.ds-font {
   font-family: 'Imbue', serif;;
   color: red;
+  font-size: 0;
 }
 
 @media screen and (min-width: 768px) {
