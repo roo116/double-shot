@@ -65,9 +65,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .front-container {
-    background-image: url("./img/hero-lg.jpg");
+    background-image: url("./img/hero-768.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 75%;
     height: 100vh;
   }
 
@@ -89,14 +89,14 @@ img {
   }
 }
 
-@media screen and (min-width: 2880px) {
+@media screen and (min-width: 1440px) {
   .front-container {
-    background-size: auto;
+    background-size: 70%;
     background-position: top;
+    background-image: url("./img/hero-lg.jpg");
   }
 
   .ds-logo {
     width: 25%;
   }
-
 }
