@@ -1,35 +1,35 @@
 * {
-  margin: 0
+  margin: 0;
 }
 
-:root {
+/* :root {
   --double-shot: font-family: 'Imbue', serif;
-}
+} */
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* HEADER Component */
 
-/* MAIN Component */
-main {
+/* FRONT Component */
+.front-container {
   background-image: url("./img/hero-mobile.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 20rem;
-  height: 100vh;
-
+  background-color: black;
+  height: 40vh;
 }
 
 .ds-logo {
@@ -39,40 +39,52 @@ main {
 
 img {
   display: block;
-    width: 50%;
-    border: white solid 5px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-header h2 {
-  font-family: 'Imbue', serif;;
+.ds-font {
+  font-family: "Imbue", serif;
   color: red;
+  font-size: 40px;
+}
+
+/* ABOUT section */
+.photo-card {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  width: 10rem;
 }
 
 @media screen and (min-width: 768px) {
-
-  main {
+  .front-container {
     background-image: url("./img/hero-lg.jpg");
     background-position: center;
     background-size: cover;
     height: 100vh;
   }
-  
+
+  header {
+    margin-bottom: -80px;
+  }
+
   .ds-logo {
+    width: 35%;
+    margin-left: 0px;
+  }
+
+  img {
+    display: block;
+    border: none;
     width: 50%;
     margin-top: 0;
     margin-bottom: 0;
   }
-  
-  img {
-      display: block;
-      width: 50%;
-      border: white solid 5px;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: auto;
-      margin-right: auto;
-  }
 }
-  
