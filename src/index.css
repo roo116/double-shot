@@ -1,22 +1,22 @@
 * {
-  margin: 0
+  margin: 0;
 }
 
-:root {
+/* :root {
   --double-shot: font-family: 'Imbue', serif;
-}
+} */
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -39,19 +39,31 @@ code {
 
 img {
   display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ds-font {
-  font-family: 'Imbue', serif;;
+  font-family: "Imbue", serif;
   color: red;
   font-size: 40px;
 }
 
-@media screen and (min-width: 768px) {
+/* ABOUT section */
+.photo-card {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  width: 10rem;
+}
+
+@media screen and (min-width: 768px) {
   .front-container {
     background-image: url("./img/hero-lg.jpg");
     background-position: center;
@@ -62,18 +74,17 @@ img {
   header {
     margin-bottom: -80px;
   }
-  
+
   .ds-logo {
     width: 35%;
     margin-left: 0px;
   }
-  
+
   img {
-      display: block;
-      border: none;
-      width: 50%;
-      margin-top: 0;
-      margin-bottom: 0;
+    display: block;
+    border: none;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
-  

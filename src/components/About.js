@@ -8,8 +8,8 @@ import chip from "../img/band/chip.jpg";
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div>
+    <div className="about-container d-flex flex-column flex-sm-row">
+      <div className="about-text">
         <h2 className="ds-font">DOUBLE SHOT</h2>
         <p>
           Durham’s own Double Shot Band - known for playing all the favorite
@@ -25,8 +25,11 @@ const About = () => {
         </p>
       </div>
 
-      <div className="d-flex flex-row flex-wrap justify-content-around">
-        <img src={scott} alt="scott"></img>
+      <div className="about-photo d-flex flex-column flex-sm-row flex-wrap justify-content-around">
+        <div className="photo-card">
+          <img src={scott} alt="scott" className="card-image"></img>
+          <div className="bottom-left">Scott Sublet, Lead Vocals, Percussion</div>
+          </div>
         <img src={tim} alt="tim"></img>
         <img src={mark} alt="mark"></img>
         <img src={chip} alt="chip"></img>

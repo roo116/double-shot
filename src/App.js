@@ -2,8 +2,9 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./App.css";
 import Header from "./components/Header";
-import About from "./components/About";
 import Front from "./components/Front";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
 
 // import images here
 
@@ -12,8 +13,10 @@ function App() {
     <div>
       <Header />
       <Front />
+      <main>
+      <Gallery />
       <About />
-
+      </main>
     </div>
   );
 }
