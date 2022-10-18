@@ -7,9 +7,19 @@ import mark from "../img/band/mark.jpg";
 import chip from "../img/band/chip.jpg";
 
 const About = () => {
+  const members = [
+    {
+      name: "Scott Sublett",
+      img: scott,
+      caption: "Lead Vocals, Drums",
+    },
+    { name: "Tim Blinsmon", img: tim, caption: "Vocals, Bass" },
+    { name: "Mark Allman", img: mark, caption: "Vocals, Guitar" },
+    { name: "Chip Hill", img: chip, caption: "Vocals, Guitar" },
+  ];
   return (
-    <div className="about-container d-flex flex-column flex-sm-row">
-      <div className="about-text">
+    <div className="about-container bg-black d-flex flex-wrap flex-column flex-sm-row">
+      <div className="about-text bg-white mb-5">
         <h2 className="ds-font">DOUBLE SHOT</h2>
         <p>
           Durham’s own Double Shot Band - known for playing all the favorite
@@ -25,14 +35,15 @@ const About = () => {
         </p>
       </div>
 
-      <div className="about-photo d-flex flex-column flex-sm-row flex-wrap justify-content-around">
-        <div className="photo-card">
-          <img src={scott} alt="scott" className="card-image"></img>
-          <div className="bottom-left">Scott Sublet, Lead Vocals, Percussion</div>
-          </div>
-        <img src={tim} alt="tim"></img>
-        <img src={mark} alt="mark"></img>
-        <img src={chip} alt="chip"></img>
+      <div className="about-photo d-flex flex-wrap justify-content-around mx-auto">
+      {members.map((member) => (
+                <div className="card border-0 mx-2" key={member.name}>
+                <img src={member.img} className="card-img rounded-0" alt={member.name} />
+                <div className="card-body bg-black text-light">
+                  <p>{member.name}: {member.caption}</p>
+                </div>
+              </div>
+        ))}
       </div>
     </div>
   );

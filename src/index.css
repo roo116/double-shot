@@ -51,26 +51,21 @@ img {
 }
 
 /* ABOUT section */
-.photo-card {
-  position: relative;
-  text-align: center;
-  color: white;
+.about-photo {
+  background-color: black;
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  width: 10rem;
+.card {
+  width: 18rem;
 }
 
 @media screen and (min-width: 768px) {
   .front-container {
-    background-image: url("./img/hero-lg.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    background-image: url("./img/hero-768.jpg");
+    background-size: 75%;
+    height: 80vh;
   }
-
+  
   header {
     margin-bottom: -80px;
   }
@@ -86,5 +81,18 @@ img {
     width: 50%;
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .front-container {
+    background-size: 70%;
+    background-position: center 8%;
+    background-image: url("./img/hero-lg.jpg");
+    height: 80vmax;
+  }
+
+  .ds-logo {
+    width: 25%;
   }
 }
