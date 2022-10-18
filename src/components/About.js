@@ -18,8 +18,8 @@ const About = () => {
     { name: "Chip Hill", img: chip, caption: "Vocals, Guitar" },
   ];
   return (
-    <div className="about-container d-flex flex-column flex-sm-row">
-      <div className="about-text">
+    <div className="about-container bg-black d-flex flex-wrap flex-column flex-sm-row">
+      <div className="about-text bg-white mb-5">
         <h2 className="ds-font">DOUBLE SHOT</h2>
         <p>
           Durham’s own Double Shot Band - known for playing all the favorite
@@ -35,9 +35,9 @@ const About = () => {
         </p>
       </div>
 
-      <div className="about-photo d-flex flex-column flex-sm-row flex-wrap justify-content-around">
+      <div className="about-photo d-flex flex-wrap justify-content-around mx-auto">
       {members.map((member) => (
-                <div className="card border-0">
+                <div className="card border-0 mx-2" key={member.name}>
                 <img src={member.img} className="card-img rounded-0" alt={member.name} />
                 <div className="card-body bg-black text-light">
                   <p>{member.name}: {member.caption}</p>
