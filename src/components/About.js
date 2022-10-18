@@ -7,6 +7,16 @@ import mark from "../img/band/mark.jpg";
 import chip from "../img/band/chip.jpg";
 
 const About = () => {
+  const members = [
+    {
+      name: "Scott Sublett",
+      img: scott,
+      caption: "Lead Vocals, Drums",
+    },
+    { name: "Tim Blinsmon", img: tim, caption: "Vocals, Bass" },
+    { name: "Mark Allman", img: mark, caption: "Vocals, Guitar" },
+    { name: "Chip Hill", img: chip, caption: "Vocals, Guitar" },
+  ];
   return (
     <div className="about-container d-flex flex-column flex-sm-row">
       <div className="about-text">
@@ -26,13 +36,14 @@ const About = () => {
       </div>
 
       <div className="about-photo d-flex flex-column flex-sm-row flex-wrap justify-content-around">
-        <div className="photo-card">
-          <img src={scott} alt="scott" className="card-image"></img>
-          <div className="bottom-left">Scott Sublet, Lead Vocals, Percussion</div>
-          </div>
-        <img src={tim} alt="tim"></img>
-        <img src={mark} alt="mark"></img>
-        <img src={chip} alt="chip"></img>
+      {members.map((member) => (
+                <div className="card border-0">
+                <img src={member.img} className="card-img rounded-0" alt={member.name} />
+                <div className="card-body bg-black text-light">
+                  <p>{member.name}: {member.caption}</p>
+                </div>
+              </div>
+        ))}
       </div>
     </div>
   );

@@ -51,16 +51,26 @@ img {
 }
 
 /* ABOUT section */
-.photo-card {
-  position: relative;
-  text-align: center;
-  color: white;
+.about-photo {
+  background-color: black;
 }
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  width: 10rem;
+.photo-card {
+  position: relative;
+}
+.card {
+  width: 18rem;
+  border-color: none;
+  border-radius: none;
+}
+
+.card-img{
+  border: none;
+  border-radius: none;
+}
+
+.card-body {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,7 +99,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440) {
   .front-container {
     background-size: 70%;
     background-position: top;
