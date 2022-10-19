@@ -35,7 +35,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="about-photo d-flex flex-wrap justify-content-around mx-auto">
+      <div className="about-photo d-flex flex-wrap justify-content-around">
       {members.map((member) => (
                 <div className="card border-0 mx-2" key={member.name}>
                 <img src={member.img} className="card-img rounded-0" alt={member.name} />
