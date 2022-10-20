@@ -1,18 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import logo from "../img/ds-logo.jpg";
 
-const Header = () => {
-  const nav = [
-    { name: "About" },
-    { name: "Events" },
-    { name: "The Music" },
-    { name: "Gallery" },
-    { name: "Get in Touch!!!" },
-  ];
+const Header = (props) => {
+ 
+  const {
+    nav=[],
+    setCurrentNav,
+    currentNav,
+  } = props
 
-  const navSelected = (name) => {
-    console.log(`${name} was clicked`)
-  }
+  useEffect (() => {
+    document.title = (currentNav.name)
+  }, [currentNav])
+
+
+  // const navSelected = (props) => {
+  //   console.log(`${props} was clicked`)
+  // }
 
   return (
     <header className="d-flex flex-wrap justify-content-between bg-black">
@@ -25,9 +29,14 @@ const Header = () => {
         id="header-nav"
         className="d-flex flex-wrap flex-row justify-content-evenly mx-auto p-2 w-50 text-light text-decoration-none"
       >
+        <li className="mx-2">
+            <a data-testid="about" href="#about">
+              About me
+            </a>
+          </li>
         {nav.map((nav) => (
-          <li className="mx-2 list-inline-item" key={nav.name}>
-           <span onClick={() => navSelected(nav.name)}>{nav.name}</span> 
+          <li className={`mx-2 list-inline-item ${currentNav.name === nav.name && 'navActive'}`} key={nav.name}>
+           <span onClick={() => setCurrentNav(nav)}><a data-testid={nav.name} href={`#${nav.name}`}>{nav.name}</a></span> 
           </li>
         ))}
       </ul>

@@ -1,5 +1,5 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header";
 import Front from "./components/Front";
@@ -9,13 +9,28 @@ import About from "./components/About";
 // import images here
 
 function App() {
+  const [nav] = useState([
+    { name: "About" },
+    { name: "Events" },
+    { name: "The Music" },
+    { name: "Gallery" },
+    { name: "Contact" },
+  ]);
+
+  const [currentNav, setCurrentNav] = useState(nav[0]);
+
   return (
     <div>
-      <Header />
+      <Header
+      nav={nav}
+      setCurrentNav={setCurrentNav}
+      currentNav={currentNav}
+      ></Header>
+
       <Front />
       <main>
-      <Gallery />
-      <About />
+        <Gallery />
+        <About />
       </main>
     </div>
   );
