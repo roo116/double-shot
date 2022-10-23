@@ -29,11 +29,6 @@ const Header = (props) => {
         id="header-nav"
         className="d-flex flex-wrap flex-row justify-content-evenly mx-auto p-2 w-50 text-light text-decoration-none"
       >
-        <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About me
-            </a>
-          </li>
         {nav.map((nav) => (
           <li className={`mx-2 list-inline-item ${currentNav.name === nav.name && 'navActive'}`} key={nav.name}>
            <span onClick={() => setCurrentNav(nav)}><a data-testid={nav.name} href={`#${nav.name}`}>{nav.name}</a></span> 
