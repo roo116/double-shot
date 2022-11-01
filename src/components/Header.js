@@ -19,7 +19,7 @@ const Header = (props) => {
   // }
 
   return (
-    <header className="d-flex flex-wrap justify-content-between bg-black">
+    <header className="d-flex flex-wrap justify-content-start bg-black">
       <div className="ds-logo">
         <span>
           <img src={logo} alt="logo" />

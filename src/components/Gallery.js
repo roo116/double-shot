@@ -1,32 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 // import PhotoList from "./PhotoList";
 
 const Gallery = () => {
-  const photos = ["../img/gallery/0-pic.jpg"];
+  const [photos] = useState([
+    {
+      name: "3 Amigos",
+    },
+    {
+      name: "Millineum Falcon",
+    },
+    {
+      name: "Scott",
+    },
+    {
+      name: "Double Shot Practice",
+    },
+    {
+      name: "Mark & Tim",
+    },
+    {
+      name: "Load-out",
+    },
+    {
+      name: "drum set",
+    },
+    {
+      name: "Tim Devines",
+    },
+    {
+      name: "set up",
+    },
+    {
+      name: "Tim practice",
+    },
+    {
+      name: "Scott Tim practice",
+    },
+    {
+      name: "Double Shot Tobacco",
+    },
+    {
+      name: "Double Shot License",
+    },
+    {
+      name: "Double Shot Lunch",
+    },
+    {
+      name: "Double Shot Alley",
+    },
+  ]);
 
   return (
-    <section className="gallery-section d-flex flex-wrap justify-content-around">
-         <div>
-         <h1 id="Gallery">Gallery</h1>
-         </div>
-         <div>
-       {photos.map((photo, i) => (
-         <img
-           src={photo[i].name}
-           alt={photo[i].name}
-           className="img-thumbnail mx-1"
-           key={photo[i].name}
-         />
-       ))}
- </div>
-       </section>
+    <div>
+      <div>
+        <h1 id="Gallery">Gallery</h1>
+      </div>
+      <div className="gallery-section d-flex flex-wrap justify-content-start">
+        {photos.map((image, i) => (
+          <img
+            src={require(`../img/gallery/${i}-pic.jpg`)}
+            alt={image.name}
+            className="img-thumbnail mx-1 photo"
+            key={image.name}
+          />
+        ))}
+      </div>
+    </div>
+  );
 
-  )
+  //
 
-//       
-
-
-//   );
+  //   );
 };
 
 export default Gallery;
