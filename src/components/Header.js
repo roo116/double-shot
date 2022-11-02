@@ -27,11 +27,11 @@ const Header = (props) => {
       </div>
       <ul
         id="header-nav"
-        className="d-flex flex-wrap flex-row justify-content-evenly mx-auto p-2 w-50 text-light text-decoration-none"
+        className="d-flex flex-wrap flex-row justify-content-evenly mx-auto p-2 w-50"
       >
         {nav.map((nav) => (
           <li className={`mx-2 list-inline-item ${currentNav.name === nav.name && 'navActive'}`} key={nav.name}>
-           <span onClick={() => setCurrentNav(nav)}><a data-testid={nav.name} href={`#${nav.name}`}>{nav.name}</a></span> 
+           <span onClick={() => setCurrentNav(nav)}><a className="text-light text-decoration-none" data-testid={nav.name} href={`#${nav.name}`}>{nav.name}</a></span> 
           </li>
         ))}
       </ul>
