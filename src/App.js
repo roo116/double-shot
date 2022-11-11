@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Front from "./components/Front";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 // import images here
 
@@ -31,6 +32,7 @@ function App() {
       <main>
         <Gallery />
         <About />
+        <Contact />
       </main>
     </div>
   );
