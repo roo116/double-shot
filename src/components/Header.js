@@ -34,6 +34,9 @@ const Header = (props) => {
            <span onClick={() => setCurrentNav(nav)}><a className="text-light text-decoration-none" data-testid={nav.name} href={`#${nav.name}`}>{nav.name}</a></span> 
           </li>
         ))}
+        <li>
+          <a href="mailto:hillkarl03@gmail.com" className="text-decoration-none text-light">Email us</a>
+        </li>
       </ul>
     </header>
   );

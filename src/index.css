@@ -76,6 +76,16 @@ img {
   margin: auto;
 }
 
+
+
+/* Contact Section */
+#Contact {
+justify-content: space-around;
+background-color: black;
+color: white;
+text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .front-container {
     background-image: url("./img/hero-768.jpg");
