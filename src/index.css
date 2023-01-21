@@ -52,10 +52,10 @@ img {
 
 /* ABOUT section */
 .about-text {
-text-align: center;
-padding: 10px;
-width: 80%;
-margin: auto;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
 }
 
 .about-photo {
@@ -72,12 +72,18 @@ margin: auto;
 }
 
 .gallery-section {
-  margin-left: 8rem;
-  width: 90vw;
+  display: block;
+  margin: auto;
 }
 
-.photo {
-  width: 18rem;
+
+
+/* Contact Section */
+#Contact {
+justify-content: space-around;
+background-color: black;
+color: white;
+text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,6 +111,18 @@ margin: auto;
   }
 }
 
+.gallery-section {
+  margin-left: 8rem;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.photo {
+  width: 18rem;
+}
+
 @media screen and (min-width: 1440px) {
   .front-container {
     background-size: 75%;
@@ -129,7 +147,6 @@ margin: auto;
   }
 }
 @media screen and (min-width: 2880px) {
-
   .front-container {
     background-position: top center;
     background-size: 60%;
@@ -147,5 +164,4 @@ margin: auto;
     margin-top: 5%;
     justify-content: space-between;
   }
-  
 }

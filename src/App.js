@@ -14,7 +14,6 @@ function App() {
     { name: "Events" },
     { name: "The Music" },
     { name: "Gallery" },
-    { name: "Contact" },
   ]);
 
   const [currentNav, setCurrentNav] = useState(nav[0]);
@@ -29,8 +28,8 @@ function App() {
 
       <Front />
       <main>
-        <Gallery />
-        <About />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
       </main>
     </div>
   );

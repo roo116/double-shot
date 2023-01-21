@@ -55,7 +55,7 @@ const Gallery = () => {
       <div>
         <h1 id="Gallery">Gallery</h1>
       </div>
-      <div className="gallery-section d-flex flex-wrap justify-content-start">
+      <div className="gallery-section">
         {photos.map((image, i) => (
           <img
             src={require(`../img/gallery/${i}-pic.jpg`)}
@@ -66,7 +66,7 @@ const Gallery = () => {
         ))}
       </div>
     </div>
-  );
+  );  
 
   //
 
